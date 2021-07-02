@@ -1,0 +1,8 @@
+:80
+
+reverse_proxy /api {
+  to api:8000
+}
+
+root * /data
+file_server
